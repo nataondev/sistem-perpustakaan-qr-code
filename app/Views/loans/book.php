@@ -31,7 +31,7 @@
                   ? $coverImageFilePath
                   : BOOK_COVER_URI . DEFAULT_BOOK_COVER);
                 ?>
-                <img class="mx-auto mh-100" src="<?= $coverImageUrl; ?>" alt="<?= $book['title']; ?>">
+                <img class="mx-auto mh-100" src="<?= urldecode($coverImageUrl); ?>" alt="<?= $book['title']; ?>">
               </div>
             </td>
             <td>

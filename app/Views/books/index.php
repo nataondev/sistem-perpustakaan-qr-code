@@ -75,7 +75,7 @@
                   <?php
                   $coverImageFilePath = BOOK_COVER_URI . $book['book_cover'];
                   ?>
-                  <img class="mx-auto mh-100" src="<?= base_url((!empty($book['book_cover']) && file_exists($coverImageFilePath)) ? $coverImageFilePath : BOOK_COVER_URI . DEFAULT_BOOK_COVER); ?>" alt="<?= $book['title']; ?>">
+                  <img class="mx-auto mh-100" src="<?= urldecode(base_url((!empty($book['book_cover']) && file_exists($coverImageFilePath)) ? $coverImageFilePath : BOOK_COVER_URI . DEFAULT_BOOK_COVER)); ?>" alt="<?= $book['title']; ?>">
                 </div>
               </a>
             </td>

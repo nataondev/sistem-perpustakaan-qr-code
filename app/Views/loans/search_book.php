@@ -150,7 +150,7 @@
     const bookCard = `<li id="${book.slug}">
           <div class="card border border-2 border-primary overflow-hidden position-relative" style="height: 160px; max-width: 355px;">
             <div class="card-body">
-              <div class="position-absolute top-50 start-0 translate-middle-y border border-black me-4"  style="background-image: url(<?= base_url(BOOK_COVER_URI); ?>${book.cover}); height: 160px; width: 120px; background-position: center; background-size: cover;">
+              <div class="position-absolute top-50 start-0 translate-middle-y border border-black me-4"  style="background-image: url('<?= site_url('uploads/book_cover/') ?>${book.cover}'); height: 160px; width: 120px; background-position: center; background-size: cover;">
               </div>
               <div class="d-flex align-items-start" style="margin-left: 100px;">
                 <div>
